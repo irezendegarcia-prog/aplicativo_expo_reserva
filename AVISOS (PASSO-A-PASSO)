@@ -1,0 +1,12 @@
+Matheus:
+Vamos criar um aplicativo de restaurante para pedidos e clientes, eu subi o projeto no github, pra usar basta clonar ele no seu not,
+(git clone https://github.com/Matheus-200/app_restaurante.git ) <---- só colocar isso aqui no terminal.
+
+vou começar criando a tela inicial (Home_page)
+criei a home page do cod, vou subir no Git
+------
+Italo: 
+21/09/2026 - > Modifiquei a tela home mudando o style dela, mudei os nomes dos botões te já adicionei a função onPress() para direcionar para outra página. Criei a página Func_Cadastro, para o cadastro de funcionários e já setei usuário e senha Usuário: Jonas | Senha: 1234. 
+------
+Italo: 
+22/09/2026 - > Irei criar a tela de "Cadatre-se", para que seja possível criar um cadastro de usuário novo. Esta tela deve conter TextInputs, Cálculo de data, botão confirmar, 5 campos de informações, Imagem. 
