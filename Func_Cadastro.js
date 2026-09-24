@@ -1,8 +1,8 @@
-import { useRouter } from 'expo-router';
+import { useNavigation } from 'expo-router';
 import { Button, Image, StyleSheet, Text, View } from 'react-native';
 
 export function LoginFunc() {
-  const navigation = useRouter();
+  const navigation = useNavigation();
 
   return (
     <View style={styles.container}>
@@ -17,7 +17,7 @@ export function LoginFunc() {
       <View style={styles.cartao}>
         <Text style={styles.tituloOpcao}>Tela de formulário</Text>
         <Text style={styles.textoOpcao}>Cadastre uma nova reserva.</Text>
-        <Button title="Abrir formulário" color="#a9472b" onPress={() => navigation.navigate('/')} />
+        <Button title="Abrir formulário" color="#a9472b" onPress={() => navigation.navigate('index')} />
       </View>
 
       <View style={styles.cartao}>
@@ -26,7 +26,7 @@ export function LoginFunc() {
         <Button
           title="Abrir resumo"
           color="#a9472b"
-          onPress={() => navigation.navigate('/Cadastro')}
+          onPress={() => navigation.navigate('Cadastro')}
         />
       </View>
     </View>

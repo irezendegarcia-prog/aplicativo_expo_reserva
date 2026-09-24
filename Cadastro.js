@@ -1,8 +1,8 @@
-import { useLocalSearchParams, useRouter } from 'expo-router';
+import { useLocalSearchParams, useNavigation } from 'expo-router';
 import { Button, Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 
 export default function Cadastro() {
-  const navigation = useRouter();
+  const navigation = useNavigation();
   const dados = useLocalSearchParams();
 
   return (
@@ -39,11 +39,11 @@ export default function Cadastro() {
         <Button
           title="Ir para a navegação"
           color="#a9472b"
-          onPress={() => navigation.navigate('/Func_Cadastro')}
+          onPress={() => navigation.navigate('Func_Cadastro')}
         />
       </View>
 
-      <Button title="Voltar ao formulário" color="#6d4c41" onPress={() => navigation.navigate('/')} />
+      <Button title="Voltar ao formulário" color="#6d4c41" onPress={() => navigation.navigate('index')} />
     </ScrollView>
   );
 }

@@ -1,4 +1,4 @@
-import { useRouter } from 'expo-router';
+import { useNavigation } from 'expo-router';
 import { useEffect, useState } from 'react';
 import {
   Alert,
@@ -12,7 +12,7 @@ import {
 } from 'react-native';
 
 export default function HomePage() {
-  const navigation = useRouter();
+  const navigation = useNavigation();
 
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
@@ -26,10 +26,7 @@ export default function HomePage() {
     if (dadosSalvos) {
       Alert.alert('Cadastro salvo', 'Os dados da reserva foram salvos com sucesso!');
 
-      navigation.navigate({
-        pathname: '/Cadastro',
-        params: dadosSalvos,
-      });
+      navigation.navigate('Cadastro', dadosSalvos);
     }
   }, [dadosSalvos]);
 
@@ -121,7 +118,7 @@ export default function HomePage() {
         <Button
           title="Abrir menu de navegação"
           color="#6d4c41"
-          onPress={() => navigation.navigate('/Func_Cadastro')}
+          onPress={() => navigation.navigate('Func_Cadastro')}
         />
       </View>
     </ScrollView>
