@@ -1,3 +1,5 @@
-import HomePage from '../../Home_page';
+import Login from './Login';
 
-export default HomePage;
+export default function Index() {
+    return <Login />;
+}

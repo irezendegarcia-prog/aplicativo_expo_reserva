@@ -8,7 +8,7 @@ export default function Navegacao() {
         headerTintColor: '#4e2a20',
       }}
     >
-      <Stack.Screen name="index" options={{ title: 'Nova reserva' }} />
+      <Stack.Screen name="func_Cadastro" options={{ title: 'Nova reserva' }} />
       <Stack.Screen name="Cadastro" options={{ title: 'Resumo da reserva' }} />
       <Stack.Screen name="Func_Cadastro" options={{ title: 'Navegação' }} />
     </Stack>
